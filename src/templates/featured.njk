@@ -1,0 +1,22 @@
+<section class="featured">
+    <div class="container">
+        <div class="row">
+            {% for feature in featured %}
+                <div class="col-12 col-md-6">
+                    <div class="featured__item">
+                        <a href="#" class="featured__link">
+                            <img class="featured__image" src="{{ feature.image }}" alt="{{ feature.title }}">
+                            <div class="featured__content-box">
+                                <h2 class="featured__title">{{ feature.title | safe}}</h2>
+                                <p class="featured__content">
+                                    {{ feature.content }}
+                                    <em class="featured__content-emphasis">{{ feature.readMore | safe}}</em>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}           
+        </div>
+    </div>
+</section>

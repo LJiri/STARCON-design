@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARCON design - Jiří Laudát</title>
+</head>
+<body>
+
+    {% include "./header.njk" %}
+
+    {% set categories = [
+        {
+            "image": "../assets/category-design-furniture.jpg",
+            "title": "Designový Nábytek"
+        },
+        {
+            "image": "../assets/category-interier-accessories.jpg",
+            "title": "Interiérové doplňky"
+        },
+        {
+            "image": "../assets/category-decoration-presents.jpg",
+            "title": "Dekorace & Dárky"
+        }
+    ] %}
+
+    {% include "./category.njk" %}
+
+    {% set featured = [
+        {
+            "image": "../assets/featured-top-300.jpg",
+            "title": "300 nejprodávanějších",
+            "content": "Zboží zakoupené službou „Platím až za 14 dní“ můžete osobně vrátit na naší pobočce nebo nám ho na stejnou adresu pošlete. Vrácené zboží musí být v originálním nepoškozeném obalu, ",
+            "readMore": "Číst dále..."
+        },
+        {
+            "image": "../assets/featured-last-news.jpg",
+            "title": "Posledn novinky",
+            "content": "Zboží zakoupené službou „Platím až za 14 dní“ můžete osobně vrátit na naší pobočce nebo nám ho na stejnou adresu pošlete. Vrácené zboží musí být v originálním nepoškozeném obalu, ",
+            "readMore": "Číst dále..."
+        }        
+    ] %}
+
+    {% include "./featured.njk" %}
+
+
+</body>
+</html>
